@@ -9,7 +9,7 @@
 
     <context:property-placeholder location="classpath:rpc.properties"/>
 
-    <bean id="serviceDiscovery" class="com.pactrex.tinydubbo.registry.ServiceRegistry">
+    <bean id="serviceDiscovery" class="com.pactrex.tinydubbo.registry.ServiceDiscovery">
         <constructor-arg name="registryAddress" value="${registry.address}"/>
     </bean>
 
